@@ -21,8 +21,9 @@ public class AuthServlet extends HttpServlet {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         Optional<User> byUsername = userService.findByUsername(username);
-        User user = byUsername.get();
+
         if(byUsername.isPresent()){
+            User user = byUsername.get();
             if(user.getPassword().equals(password)){
                 req.getSession().setAttribute("user", user);
                 resp.sendRedirect("/");
