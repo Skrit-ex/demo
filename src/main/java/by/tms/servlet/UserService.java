@@ -14,7 +14,7 @@ public class UserService {
 
     public Optional<User> findByUsername(String username){
         for(User user: userList){
-            if(user.getUsername().equals("username")){
+            if(user.getUsername().equals(username)){
                 return Optional.of(user);
             }
         }
