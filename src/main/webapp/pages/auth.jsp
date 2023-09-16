@@ -17,5 +17,9 @@
 </form>
 <p>${message}</p>
 
+<form action="/", method="post">
+  <button>Home</button>
+</form>
+
 </body>
 </html>
