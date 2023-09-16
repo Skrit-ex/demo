@@ -21,5 +21,9 @@
 
 <p1> Your result = ${result} </p1>
 
+<form action="/", method="post">
+    <button>Home</button>
+</form>
+
 </body>
 </html>
