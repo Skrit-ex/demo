@@ -22,13 +22,20 @@
     if (user != null) {
         out.print("<h1>Hello " + user.getName() + "!</h1>");
     }
-
 %>
 
-<a href="/reg"> Registration </a>
-<a href="/auth"> Authorisation </a>
-<a href="/logout"> Logout </a>
-<a href="/calc"> Calculator </a>
+<%
+            if(user == null){
+                out.print("<a href=\"/logout\"> Logout </a>\n" +
+                        "<a href=\"/calc\"> Calculator </a>");
+            }
+            if(user!= null){
+                out.print("<a href=\"/logout\"> Logout </a>\n" +
+                        "<a href=\"/calc\"> Calculator </a>");
+            }
+
+
+%>
 
 </body>
 </html>

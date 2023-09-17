@@ -11,14 +11,25 @@
 </head>
 <body>
 <form action="/auth" method="post">
-  <input href="text" placeholder="Username" name="username">
-  <input href="text" placeholder="Password" name="password">
+
+  <div class="input-group flex-nowrap">
+    <span class="input-group-text" id="addon-wrapping"></span>
+    <input type="text" class="form-control" placeholder="username" name="username" aria-label="Username" aria-describedby="addon-wrapping">
+  </div>
+
+  <div class="input-group flex-nowrap">
+    <span class="input-group-text" id="addon-wrapping2"></span>
+    <input type="text" class="form-control" placeholder="password" name="password" aria-label="Password" aria-describedby="addon-wrapping">
+  </div>
+
   <button>Submit</button>
 </form>
+
 <p>${message}</p>
 
-<form action="/", method="post">
+<form action="/" method="post">
   <button>Home</button>
+
 </form>
 
 </body>
