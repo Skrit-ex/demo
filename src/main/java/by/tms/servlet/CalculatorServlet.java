@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Optional;
 
-@WebServlet("/calc")
+@WebServlet(name = "CalculatorServlet", urlPatterns = "/calc")
 public class CalculatorServlet extends HttpServlet {
     private final Calculator calculator = new Calculator();
 
