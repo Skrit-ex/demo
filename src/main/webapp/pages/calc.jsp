@@ -19,10 +19,10 @@
     <button>Submit</button>
 </form>
 
-<p1> Your result = ${result} </p1>
+<p1> Your result = ${result1} </p1>
 
 <form action="/", method="post">
-    <button type="button" class="btn btn-secondary">Home</button>
+    <button>Home</button>
 </form>
 
 </body>

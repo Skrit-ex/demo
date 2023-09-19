@@ -26,8 +26,8 @@
 
 <%
             if(user == null){
-                out.print("<a href=\"/logout\"> Logout </a>\n" +
-                        "<a href=\"/calc\"> Calculator </a>");
+                out.print("<a href=\"/reg\"> Registration </a>\n" +
+                        "<a href=\"/auth\"> Authorisation </a>");
             }
             if(user!= null){
                 out.print("<a href=\"/logout\"> Logout </a>\n" +
