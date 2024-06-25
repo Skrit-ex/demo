@@ -21,7 +21,7 @@
 
 <p1> Your result = ${result1} </p1>
 
-<form action="/", method="post">
+<form action="/"  method="post">
     <button>Home</button>
 </form>
 
